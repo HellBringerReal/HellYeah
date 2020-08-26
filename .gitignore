@@ -1,0 +1,16 @@
+gotti/config.py
+gotti/*.session
+gotti/*.session-journal
+gotti/config.ini
+*.pyc
+.idea/
+.project
+.pydevproject
+.directory
+.vscode
+gotti/modules/helper_funcs/temp.txt
+gotti/elevated_users.json
+start-3.6.bat
+*.session
+kangsticker.png
+venv
