@@ -27,26 +27,20 @@ from gotti.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
 
+Wassup!!   {},
+MY NAME IS {} !
 
-┈┈┈┈╱▔▔▔▔╲┈┈┈┈
-┈┈┈▕▕╲┊┊╱▏▏┈┈┈
-┈┈┈▕▕▂╱╲▂▏▏┈┈┈
-┈┈┈┈╲┊┊┊┊╱┈┈┈┈
-┈┈┈┈▕╲▂▂╱▏┈┈┈┈
-╱▔▔▔▔┊┊┊┊▔▔▔▔╲
-HOI    {}, MY NAME IS {} !
+// I am an advance group management bot with a lot of Special Features.
+// Gonna Love The speed and maintenance features of this bot.
+// A Powerful Telegram Bot to Manage Your Groups,feel free to add to your groups!!
 
-I AM A GROUP MANAGER BOT MAINTAINED BY 
-
-[THIS LEGEND](tg://user?id={}).
-
-HIT HELP FOR COMMANDS  /help
+/help - To See The List Of available Commands
 
 """
 
 HELP_STRINGS = """
 
-Hello! my name *{}*.
+Hey! Master my name is *{}*.
 
 *Main* commands available:
  - /start: start the bot
