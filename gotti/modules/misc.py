@@ -463,7 +463,7 @@ __help__ = """
 
 
 *Dogbin*
- - /paste: Create a paste or a shortened url using dogbin
+ - /paste: Create a paste or a shortened url using [dogbin](https://del.dog)
  - /getpaste: Get the content of a paste or shortened url from dogbin
  - /pastestats: Get stats of a paste or shortened url from dogbin
 """
