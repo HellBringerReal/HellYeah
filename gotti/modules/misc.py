@@ -452,7 +452,7 @@ __help__ = """
  - /time <query> : Gives information about a timezone. Country Code/Country Name/Timezone Name
 
 *Dogbin*
- - /paste: Create a paste or a shortened url using [dogbin](https://del.dog)
+ - /paste: Create a paste or a shortened url using dogbin
  - /getpaste: Get the content of a paste or shortened url from dogbin
  - /pastestats: Get stats of a paste or shortened url from dogbin
 """
