@@ -38,7 +38,7 @@ __help__ = """
  example syntax: /cash 1 USD INR
 
  - /define <word>: returns the definition of the word.
-
+ - /time <query> : Gives information about a timezone. Country Code/Country Name/Timezone Name
 *Dogbin*
  - /paste: Create a paste or a shortened url using [dogbin](https://del.dog)
  - /getpaste: Get the content of a paste or shortened url from [dogbin](https://del.dog)
