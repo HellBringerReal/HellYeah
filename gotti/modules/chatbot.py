@@ -28,9 +28,9 @@ def add_chat(bot: Bot, update: Update):
         ses_id = str(ses.id)
         expires = str(ses.expires)
         sql.set_ses(chat_id, ses_id, expires)
-        msg.reply_text("AI successfully enabled for this chat!")
+        msg.reply_text("From Now You can talk to me🤩!")
     else:
-        msg.reply_text("AI is already enabled for this chat!")
+        msg.reply_text("I am Already active in your group babe!")
         
         
 @run_async
@@ -42,12 +42,12 @@ def remove_chat(bot: Bot, update: Update):
         msg.reply_text("AI isn't enabled here in the first place!")
     else:
         sql.rem_chat(chat_id)
-        msg.reply_text("AI disabled successfully!")
+        msg.reply_text("You Stopped me from talking here🙄!")
         
         
 def check_message(bot: Bot, message):
     reply_msg = message.reply_to_message
-    if message.text.lower() == "saitama":
+    if message.text.lower() == "leah":
         return True
     if reply_msg:
         if reply_msg.from_user.id == bot.get_me().id:
@@ -91,7 +91,8 @@ __mod_name__ = "CHAT BOT"
 
 __help__ = """
 
-Powered by CoffeeHouse (https://coffeehouse.intellivoid.net/) from @Intellivoid
+Powered by CoffeeHouse..
+Now I Can Talk In Your Group Just Like Humans.
 
  - /addchat : Enables Chatbot mode in the chat.
  - /rmchat  : Disables Chatbot mode in the chat.
