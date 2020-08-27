@@ -116,12 +116,6 @@ def get_paste_stats(bot: Bot, update: Update, args: List[str]):
     update.effective_message.reply_text(reply, parse_mode=ParseMode.MARKDOWN)
 
 
-__help__ = """
- - /paste: Create a paste or a shortened url using [dogbin](https://del.dog)
- - /getpaste: Get the content of a paste or shortened url from [dogbin](https://del.dog)
- - /pastestats: Get stats of a paste or shortened url from [dogbin](https://del.dog)
-"""
-
 __mod_name__ = "DOG BIN"
 
 PASTE_HANDLER = DisableAbleCommandHandler("paste", paste, pass_args=True)
