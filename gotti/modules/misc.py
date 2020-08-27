@@ -459,6 +459,8 @@ __help__ = """
 
  - /lyrics <song>: returns the lyrics of that song. Either Song name or with artist
 
+ - /music <Youtube link> : download audio file from youtube link.
+
 
 *Dogbin*
  - /paste: Create a paste or a shortened url using dogbin
