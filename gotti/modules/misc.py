@@ -426,6 +426,10 @@ __help__ = """
 
  - /info: get information about a user.
 
+ - /reverse: Does a reverse image search of the media which it was replied to.
+
+ - /git:{GitHub username} Returns info about a GitHub user or organization.
+
  - /markdownhelp: quick summary of how markdown works in telegram - can only be called in private chats.
 
  - /safemode <on/off/yes/no>: Disallows new users to send media for 24 hours after joining a group.
