@@ -21,9 +21,14 @@ def ud(bot: Bot, update: Update):
 __help__ = """
  - /ud <word>: Type the word or expression you want to search use.
  - /urban <word>: Same as /ud
+
  - /tts <Text> : Change Text To Audio
+
  - /weather <city>: get weather info in a particular place
+
  - /wiki text: Returns search from wikipedia for the input text
+
+ - /wall <query> to get wallpaper
 """
 
 UD_HANDLER = DisableAbleCommandHandler(["ud", "urban"], ud)

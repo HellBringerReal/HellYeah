@@ -60,6 +60,11 @@
          "description": "for activate chatbot",
          "value": "x_y_z"
       },
+      "WALL_API":{
+         "description": "Enter wall api",
+         "required": false,
+         "value": ""
+      },
       "API_OPENWEATHER": {
          "description": "Required for weather information",
          "value": "5c5adc2bc1832de6943e3f4467e84c39"
