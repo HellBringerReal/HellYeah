@@ -34,7 +34,15 @@ def police(bot: Bot, update: Update):
 
 
 __help__ = """
+ - /cash : currency converter
+ example syntax: /cash 1 USD INR
 
+ - /define <word>: returns the definition of the word.
+
+*Dogbin*
+ - /paste: Create a paste or a shortened url using [dogbin](https://del.dog)
+ - /getpaste: Get the content of a paste or shortened url from [dogbin](https://del.dog)
+ - /pastestats: Get stats of a paste or shortened url from [dogbin](https://del.dog)
 """
 
 POLICE_HANDLER = DisableAbleCommandHandler("police", police)
