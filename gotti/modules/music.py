@@ -69,10 +69,7 @@ def music(bot: Bot, update: Update, args):
 				bot.send_message(chat_id=chatId, text='Something went wrong with the download..!\nPlease Report there @AnonymousD3061')
 
 
-__help__ = """ Youtube audio Downloader
- - /music <Youtube link> : download audio file from youtube link.
 
-"""
 __mod_name__ = "MP3 DOWNLOADER" 
 
 music_handler = CommandHandler('music', music, pass_args=True)
