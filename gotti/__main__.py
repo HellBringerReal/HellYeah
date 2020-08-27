@@ -32,6 +32,7 @@ MY NAME IS {} !
 
 // I am an advance group management bot with a lot of Special Features.
 // Gonna Love The speed and maintenance features of this bot.
+// A Powerful Telegram Bot to Manage Your Groups,feel free to add to your groups!!
 
 /help - To See The List Of available Commands
 
