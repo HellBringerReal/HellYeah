@@ -455,6 +455,11 @@ __help__ = """
 
  - /t: while replying to a message, will reply with a grammar corrected version
 
+ - /tr (language code) as reply to a long message.
+
+ - /lyrics <song>: returns the lyrics of that song. Either Song name or with artist
+
+
 *Dogbin*
  - /paste: Create a paste or a shortened url using dogbin
  - /getpaste: Get the content of a paste or shortened url from dogbin
