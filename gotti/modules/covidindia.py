@@ -31,7 +31,7 @@ def covindia(bot: Bot, update: Update):
     if state:
         bot.send_message(
             message.chat.id,
-            '`COVID-19 Tracker`\n*Number of confirmed cases in %s:* %s\n*Deceased:* %s\n*Recovered:* %s\n\n_Source:_ covid19india.org' % (state, confirmed, deceased, recovered),
+            '`COVID-19 Tracker`\n*Number of confirmed cases in %s:* %s\n*Deceased:* %s\n*Recovered:* %s\n\n_Source: LeahGottiRobot ' % (state, confirmed, deceased, recovered),
             parse_mode = ParseMode.MARKDOWN,
             disable_web_page_preview = True
         )
