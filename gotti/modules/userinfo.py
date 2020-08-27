@@ -127,6 +127,7 @@ def __user_info__(user_id):
 
 __help__ = """
  - /whois <username or reply> : Shows Whole info of the user
+ - /info : Shows Userinfo
  - /setbio <text>: while replying, will save another user's bio
  - /bio: will get your or another user's bio. This cannot be set by yourself.
  - /setme <text>: will set your info
