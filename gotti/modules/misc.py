@@ -451,6 +451,10 @@ __help__ = """
 
  - /time <query> : Gives information about a timezone. Country Code/Country Name/Timezone Name
 
+ - /gps: <location> Get gps location
+
+ - /t: while replying to a message, will reply with a grammar corrected version
+
 *Dogbin*
  - /paste: Create a paste or a shortened url using dogbin
  - /getpaste: Get the content of a paste or shortened url from dogbin
