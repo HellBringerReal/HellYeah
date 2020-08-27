@@ -114,6 +114,7 @@ __help__ = """
  - /cov top <n(integer)>: Get the top n countries with the highest confirmed cases.
  - /covid get worldwide corona status
  - /corona  😷 See Steps To Be Healthy
+ - /covindia <state>: Get real time COVID-19 stats for the input Indian state
 """
 
 __mod_name__ = 'COVID-19'
