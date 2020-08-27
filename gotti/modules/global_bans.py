@@ -309,6 +309,11 @@ you and your groups by removing spam flooders as quickly as possible. They can b
 Gmutes, also known as global mutes, are used by the bot owners to mute spammers across all groups. This helps protect \
 you and your groups by removing spam flooders as quickly as possible. They can be disabled for you group by calling \
 /gmutestat
+*Bot owners only*
+Request it to our support chat
+ - /gkick Globally Kick a user
+ - /gban Globally Bans a user
+ - /gmute Globally Mutes a user
 """
 
 __mod_name__ = "GBAN/MUTE/KICK"
