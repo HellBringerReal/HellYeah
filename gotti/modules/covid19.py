@@ -112,9 +112,12 @@ def cov(bot: Bot, update: Update):
 __help__ = """
  - /cov <country> <state> <locality>: Get real time COVID-19 stats for the input location.
  - /cov top <n(integer)>: Get the top n countries with the highest confirmed cases.
+ - /covid get worldwide corona status
+ - /corona  😷 See Steps To Be Healthy
+ - /covindia <state>: Get real time COVID-19 stats for the input Indian state
 """
 
-__mod_name__ = 'COVID-19 TRACKER'
+__mod_name__ = 'COVID-19'
 
 COV_HANDLER = CommandHandler('cov', cov)
 
