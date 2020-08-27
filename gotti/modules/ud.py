@@ -22,12 +22,13 @@ __help__ = """
  - /ud <word>: Type the word or expression you want to search use.
  - /urban <word>: Same as /ud
  - /tts <Text> : Change Text To Audio
+ - /weather <city>: get weather info in a particular place
 """
 
 UD_HANDLER = DisableAbleCommandHandler(["ud", "urban"], ud)
 
 dispatcher.add_handler(UD_HANDLER)
 
-__mod_name__ = "URBAN DICTIONARY"
+__mod_name__ = "TOOLS 2"
 __command_list__ = ["ud", "urban"]
 __handlers__ = [UD_HANDLER]
