@@ -61,9 +61,6 @@ def weather(bot, update, args):
         update.effective_message.reply_text("Sorry, location not found.")
 
 
-__help__ = """
- - /weather <city>: get weather info in a particular place
-"""
 
 __mod_name__ = "WEATHER"
 

@@ -130,6 +130,8 @@ __help__ = """
  - /roll : Roll a dice.
  - /rlg : Join ears,nose,mouth and create an emo ;-;
  - /zal type some text
+ - /weebify <text>: returns a weebified text
+ *Animation*
  - /love ❣️
  - /hack 👨‍💻
  - /bombs 💣

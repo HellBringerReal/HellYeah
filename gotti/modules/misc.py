@@ -426,6 +426,10 @@ __help__ = """
 
  - /info: get information about a user.
 
+ - /reverse: Does a reverse image search of the media which it was replied to.
+
+ - /git:{GitHub username} Returns info about a GitHub user or organization.
+
  - /markdownhelp: quick summary of how markdown works in telegram - can only be called in private chats.
 
  - /safemode <on/off/yes/no>: Disallows new users to send media for 24 hours after joining a group.
@@ -439,7 +443,33 @@ __help__ = """
 
  - /getfw <model> <csc> - Samsung only - gets firmware download links from samfrew, sammobile and sfirmwares for the given device
 
- - /imdb <movie or TV series name>: View IMDb results for selected movie or TV series 
+ - /imdb <movie or TV series name>: View IMDb results for selected movie or TV series.
+
+ - /cash : currency converter. eg. syntax: /cash 1 USD INR
+
+ - /define <word>: returns the definition of the word.
+
+ - /time <query> : Gives information about a timezone. Country Code/Country Name/Timezone Name
+
+ - /gps: <location> Get gps location
+
+ - /t: while replying to a message, will reply with a grammar corrected version
+
+ - /tr (language code) as reply to a long message.
+
+ - /lyrics <song>: returns the lyrics of that song. Either Song name or with artist
+
+ - /music <Youtube link> : download audio file from youtube link.
+
+ - /react: Reacts with a random reaction
+
+ - /shout <keyword>: write anything you want to give loud shout. eg. /shout BINOD
+
+
+*Dogbin*
+ - /paste: Create a paste or a shortened url using dogbin
+ - /getpaste: Get the content of a paste or shortened url from dogbin
+ - /pastestats: Get stats of a paste or shortened url from dogbin
 """
 
 ID_HANDLER = DisableAbleCommandHandler("id", get_id, pass_args=True)
