@@ -69,11 +69,6 @@ def sudodemote(bot: Bot, update: Update, args: List[str]):
     return ""
 
 
-__help__ = """
-*Bot owner only:*
- - /sudopromote: promotes the user to SUDO USER
- - /sudodemote: demotes the user from SUDO USER
-"""
 
 __mod_name__ = "SUDO"
 
