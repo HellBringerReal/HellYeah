@@ -30,9 +30,9 @@ PM_START_TEXT = """
 Wassup!!   {},
 MY NAME IS {} !
 
-// I am an advance group management bot with a lot of Special Features.
-// Gonna Love The speed and maintenance features of this bot.
-// A Powerful Telegram Bot to Manage Your Groups,feel free to add to your groups!!
+// I am an advance group management bot with a lot of Special Features.//
+// Gonna Love The speed and maintenance features of this bot.//
+// A Powerful Telegram Bot to Manage Your Groups,feel free to add to your groups!!//
 
 /help - To See The List Of available Commands
 
@@ -40,17 +40,15 @@ MY NAME IS {} !
 
 HELP_STRINGS = """
 
-Hey! Master my name is *{}*.
+Hey! Master my name is *{}* 🔥🔥
 
 *Main* commands available:
- - /start: start the bot
- - /help: PM's you this message.
- - /help <module name>: PM's you info about that module.
- - /settings:
+🌈 - /start: start the bot
+🌈 - /help: PM's you this message.
+🌈 - /help <module name>: PM's you info about that module.
+🌈 - /settings:
    - in PM: will send you your settings for all supported modules.
    - in a group: will redirect you to pm, with all that chat's settings.
-
-
 {}
 And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
@@ -144,7 +142,7 @@ def start(bot: Bot, update: Update, args: List[str]):
             first_name = update.effective_user.first_name
             update.effective_message.reply_text(
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
-                parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="ADD ME TO YOUR GROUP",
+                parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="🔥 Click Here To Add In Groups",
                                                                        url="t.me/{}?startgroup=true".format(bot.username))]]))
 
 
@@ -248,7 +246,7 @@ def get_help(bot: Bot, update: Update):
     # ONLY send help in PM
     if chat.type != chat.PRIVATE:
 
-        update.effective_message.reply_text("Contact me in PM to get the list of possible commands.",
+        update.effective_message.reply_text("Contact me in PM to get the list of possible commands.🤓",
                                             reply_markup=InlineKeyboardMarkup(
                                                 [[InlineKeyboardButton(text="Help",
                                                                        url="t.me/{}?start=help".format(
