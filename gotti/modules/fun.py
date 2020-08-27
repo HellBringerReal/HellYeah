@@ -130,6 +130,16 @@ __help__ = """
  - /roll : Roll a dice.
  - /rlg : Join ears,nose,mouth and create an emo ;-;
  - /zal type some text
+ - /love ❣️
+ - /hack 👨‍💻
+ - /bombs 💣
+ - /moonanimation 🌚
+ - /clockanimation 🕛
+ - /earthanimation 🌍
+ - /blockanimation 🟥
+ - /kill ⚰
+ - /police : 🚔
+
 """
 
 RUNS_HANDLER = DisableAbleCommandHandler("runs", runs)

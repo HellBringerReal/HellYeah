@@ -304,9 +304,19 @@ __help__ = """
 Gbans, also known as global bans, are used by the bot owners to ban spammers across all groups. This helps protect \
 you and your groups by removing spam flooders as quickly as possible. They can be disabled for you group by calling \
 /gbanstat
+
+ - /gmutestat <on/off/yes/no>: Will disable the effect of global mutes on your group, or return your current settings.
+Gmutes, also known as global mutes, are used by the bot owners to mute spammers across all groups. This helps protect \
+you and your groups by removing spam flooders as quickly as possible. They can be disabled for you group by calling \
+/gmutestat
+*Bot owners only*
+Request it to our support chat
+ - /gkick Globally Kick a user
+ - /gban Globally Bans a user
+ - /gmute Globally Mutes a user
 """
 
-__mod_name__ = "GLOBAL BAN"
+__mod_name__ = "GBAN/MUTE/KICK"
 
 GBAN_HANDLER = CommandHandler("gban", gban, pass_args=True,
                               filters=CustomFilters.sudo_filter | CustomFilters.support_filter)

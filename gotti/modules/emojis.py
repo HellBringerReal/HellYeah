@@ -343,27 +343,6 @@ def kill(bot: Bot, update: Update):
 
 
 
-__help__ = """
-
-- /love ❣️
-
-- /hack 👨‍💻
-
-- /bombs 💣
-
-- /moonanimation 🌚
-
-- /clockanimation 🕛
-
-- /earthanimation 🌍
-
-- /blockanimation 🟥
-
-- /kill ⚰
-
-"""
-
-
 KILL_HANDLER = DisableAbleCommandHandler("kill",kill)
 LOVE_HANDLER = DisableAbleCommandHandler("love", love)
 HACK_HANDLER = DisableAbleCommandHandler("hack", hack)
