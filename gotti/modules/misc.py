@@ -461,13 +461,9 @@ __help__ = """
 
  - /music <Youtube link> : download audio file from youtube link.
 
- - /react: Reacts with a random reaction
-
- - /shout <keyword>: write anything you want to give loud shout. eg. /shout BINOD
-
 
 *Dogbin*
- - /paste: Create a paste or a shortened url using dogbin
+ - /paste: Create a paste or a shortened url using [dogbin](https://del.dog)
  - /getpaste: Get the content of a paste or shortened url from dogbin
  - /pastestats: Get stats of a paste or shortened url from dogbin
 """
@@ -498,6 +494,6 @@ dispatcher.add_handler(GETFW_HANDLER)
 dispatcher.add_handler(CHECKFW_HANDLER)
 
 
-__mod_name__ = "MASTER MOD"
+__mod_name__ = "TOOLS"
 __command_list__ = ["id", "info", "echo"]
 __handlers__ = [ID_HANDLER, GIFID_HANDLER, INFO_HANDLER, ECHO_HANDLER, MD_HELP_HANDLER, STATS_HANDLER, SAFEMODE_HANDLER, MAGISK_HANDLER, TWRP_HANDLER, GETFW_HANDLER, CHECKFW_HANDLER]

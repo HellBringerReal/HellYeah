@@ -131,6 +131,9 @@ __help__ = """
  - /rlg : Join ears,nose,mouth and create an emo ;-;
  - /zal type some text
  - /weebify <text>: returns a weebified text
+ - /react: Reacts with a random reaction
+ - /shout <keyword>: write anything you want to give loud shout. eg. /shout BINOD
+
  *Animation*
  - /love ❣️
  - /hack 👨‍💻
