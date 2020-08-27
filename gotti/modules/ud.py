@@ -23,6 +23,7 @@ __help__ = """
  - /urban <word>: Same as /ud
  - /tts <Text> : Change Text To Audio
  - /weather <city>: get weather info in a particular place
+ - /wiki text: Returns search from wikipedia for the input text
 """
 
 UD_HANDLER = DisableAbleCommandHandler(["ud", "urban"], ud)
