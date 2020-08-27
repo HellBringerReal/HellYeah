@@ -443,7 +443,18 @@ __help__ = """
 
  - /getfw <model> <csc> - Samsung only - gets firmware download links from samfrew, sammobile and sfirmwares for the given device
 
- - /imdb <movie or TV series name>: View IMDb results for selected movie or TV series 
+ - /imdb <movie or TV series name>: View IMDb results for selected movie or TV series.
+
+ - /cash : currency converter. eg. syntax: /cash 1 USD INR
+
+ - /define <word>: returns the definition of the word.
+
+ - /time <query> : Gives information about a timezone. Country Code/Country Name/Timezone Name
+
+*Dogbin*
+ - /paste: Create a paste or a shortened url using [dogbin](https://del.dog)
+ - /getpaste: Get the content of a paste or shortened url from dogbin
+ - /pastestats: Get stats of a paste or shortened url from dogbin
 """
 
 ID_HANDLER = DisableAbleCommandHandler("id", get_id, pass_args=True)
