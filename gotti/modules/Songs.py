@@ -25,7 +25,7 @@ def song(bot: event, Bot, update: Update, args):
     l = glob.glob("*.mp3")
     loa = l[0]
     msg.reply_text("sending the song")
-    await event.client.send_file(
+    bot.client.send_file(
                 event.chat_id,
                 loa,
                 force_document=True,
