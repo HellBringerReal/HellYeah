@@ -109,6 +109,5 @@ def downloadmusic_response(bot, update, user_data):
     os.remove('{}/{}.mp3'.format(user,musictitle))
     return ConversationHandler.END
 
-__mod_name__ = "SONGS"
 
-dispatcher.add_handler(SONGS_HANDLER)
+dispatcher.add_handler(CommandHandler('asksong', ask, pass_args=True))
