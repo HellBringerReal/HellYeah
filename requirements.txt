@@ -25,3 +25,6 @@ wikipedia
 pyowm
 tabulate
 parsel
+instantmusic
+telethon
+
