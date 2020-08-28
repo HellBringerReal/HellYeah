@@ -11,10 +11,10 @@ os.system("rm -rf *.mp3")
     
 
 @run_async
-def song(bot: event, Bot, update: Update, args):
+def song(bot: Bot, update: Update, args):
     if event.fwd_from:
         return
-    cmd = event.pattern_match.group(1)
+    cmd = args.pattern_match.group(1)
     reply_to_id = event.message.id
     if event.reply_to_msg_id:
         reply_to_id = event.reply_to_msg_id
