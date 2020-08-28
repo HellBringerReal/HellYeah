@@ -27,4 +27,10 @@ tabulate
 parsel
 instantmusic
 telethon
+json
+time
+os
+urllib
+lxml
+youtube_dl
 
