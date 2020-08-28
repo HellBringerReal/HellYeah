@@ -111,6 +111,4 @@ def downloadmusic_response(bot, update, user_data):
 
 __mod_name__ = "SONGS"
 
-SONGS_HANDLER = DisableAbleCommandHandler("asksong", song, pass_args=True)
-
 dispatcher.add_handler(SONGS_HANDLER)
