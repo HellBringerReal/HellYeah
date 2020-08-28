@@ -27,7 +27,5 @@ tabulate
 parsel
 instantmusic
 telethon
-urllib
-lxml
 youtube_dl
 
