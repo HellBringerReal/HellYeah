@@ -27,7 +27,6 @@ tabulate
 parsel
 instantmusic
 telethon
-json
 time
 os
 urllib
