@@ -108,3 +108,9 @@ def downloadmusic_response(bot, update, user_data):
         update.message.reply_text("I'm sorry but the song you requested is larger than telegram's max size limit, 50MB")
     os.remove('{}/{}.mp3'.format(user,musictitle))
     return ConversationHandler.END
+
+__mod_name__ = "SONGS"
+
+SONGS_HANDLER = DisableAbleCommandHandler("asksong", song, pass_args=True)
+
+dispatcher.add_handler(SONGS_HANDLER)
