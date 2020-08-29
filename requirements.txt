@@ -25,3 +25,8 @@ wikipedia
 pyowm
 tabulate
 parsel
+instantmusic
+telethon
+youtube_dl
+lyricwikia
+
