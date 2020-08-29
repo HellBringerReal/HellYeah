@@ -7,8 +7,6 @@ from bs4 import BeautifulSoup
 import youtube_dl
 import lyricwikia
    
-     if not os.path.exists('temp_folder'):
-        os.makedirs('temp_folder')
 
 def getRan(bot, update):
     bot.sendMessage(chat_id=update.message.chat_id,
