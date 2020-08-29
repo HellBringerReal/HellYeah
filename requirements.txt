@@ -28,4 +28,5 @@ parsel
 instantmusic
 telethon
 youtube_dl
+lyricwikia
 
