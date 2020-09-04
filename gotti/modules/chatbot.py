@@ -22,6 +22,7 @@ api_client = LydiaAI(CoffeeHouseAPI)
 
 
 @run_async
+@user_admin
 def add_chat(bot: Bot, update: Update):
     global api_client
     chat_id = update.effective_chat.id
@@ -38,6 +39,7 @@ def add_chat(bot: Bot, update: Update):
         
         
 @run_async
+@user_admin
 def remove_chat(bot: Bot, update: Update):
     msg = update.effective_message
     chat_id = update.effective_chat.id
