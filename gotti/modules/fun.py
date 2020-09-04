@@ -80,6 +80,12 @@ def abuse(bot: Bot, update: Update):
     reply_text = msg.reply_to_message.reply_text if msg.reply_to_message else msg.reply_text
     reply_text(random.choice(fun_strings.ABUSE_STRINGS))
 
+@run_async
+def insult(bot: Bot, update: Update):
+    msg = update.effective_message
+    reply_text = msg.reply_to_message.reply_text if msg.reply_to_message else msg.reply_text
+    reply_text(random.choice(fun_strings.INSULT_STRINGS))
+
 
 @run_async
 def shrug(bot: Bot, update: Update):
@@ -134,6 +140,7 @@ __help__ = """
  - /react: Reacts with a random reaction
  - /shout <keyword>: write anything you want to give loud shout. eg. /shout BINOD
  - /abuse : Insult In Hindi & English
+ - /insult : Some English Insults
 
  *Animation*
  - /love ❣️
@@ -158,6 +165,7 @@ RLG_HANDLER = DisableAbleCommandHandler("rlg", rlg)
 DECIDE_HANDLER = DisableAbleCommandHandler("decide", decide)
 TABLE_HANDLER = DisableAbleCommandHandler("table", table)
 ABUSE_HANDLER = DisableAbleCommandHandler("abuse", abuse)
+INSULT_HANDLER = DisableAbleCommandHandler("insult", insult)
 
 dispatcher.add_handler(RUNS_HANDLER)
 dispatcher.add_handler(SLAP_HANDLER)
@@ -169,8 +177,9 @@ dispatcher.add_handler(RLG_HANDLER)
 dispatcher.add_handler(DECIDE_HANDLER)
 dispatcher.add_handler(TABLE_HANDLER)
 dispatcher.add_handler(ABUSE_HANDLER)
+dispatcher.add_handler(INSULT_HANDLER)
 
 __mod_name__ = "FUN"
-__command_list__ = ["runs", "slap", "roll", "toss", "shrug", "bluetext", "rlg", "decide", "table", "abuse"]
+__command_list__ = ["runs", "slap", "roll", "toss", "shrug", "bluetext", "rlg", "decide", "table", "abuse", "insult"]
 __handlers__ = [RUNS_HANDLER, SLAP_HANDLER, ROLL_HANDLER, TOSS_HANDLER, SHRUG_HANDLER, BLUETEXT_HANDLER, RLG_HANDLER,
-                DECIDE_HANDLER, TABLE_HANDLER, ABUSE_HANDLER]
+                DECIDE_HANDLER, TABLE_HANDLER, ABUSE_HANDLER, INSULT_HANDLER]
