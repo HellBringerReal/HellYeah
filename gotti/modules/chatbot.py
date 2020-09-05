@@ -116,6 +116,8 @@ __help__ = """
 
 Powered by CoffeeHouse..
 Now I Can Talk In Your Group Just Like Humans.
+Service Opened For every Group. 
+Active it by this Command
 
  - /addchat : Enables Chatbot mode in the chat.
  - /rmchat  : Disables Chatbot mode in the chat.
