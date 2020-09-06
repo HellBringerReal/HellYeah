@@ -153,7 +153,7 @@ __help__ = """
  - /flood: Get the current flood control setting
 
 *Admin only:*
- - /setflood <int/'no'/'off'>: enables or disables flood control
+ - /setflood <Number/'no'/'off'>: enables or disables flood control
  Example: /setflood 10
  This will mute users if they send more than 10 messages in a row, bots are ignored.
 """
