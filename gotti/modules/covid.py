@@ -2,8 +2,7 @@ from telegram import ParseMode, Update, Bot, Chat
 from telegram.ext import CommandHandler, MessageHandler, BaseFilter, run_async
 
 from gotti import dispatcher
-
-from requests import get
+import requests
 
 import json
 from urllib.request import urlopen
