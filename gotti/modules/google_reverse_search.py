@@ -227,6 +227,7 @@ def app(_bot: Bot, update: Update):
     except Exception as err:
         message.reply_text(err)
     progress_message.delete()
+
 __mod_name__ = "IMAGE SEARCH"
 
 REVERSE_HANDLER = DisableAbleCommandHandler("reverse", reverse, pass_args=True, admin_ok=True)
