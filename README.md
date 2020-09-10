@@ -1,3 +1,6 @@
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=HellBringerReal&hide=dockerfile)](https://github.com/HellBringerReal)
+
+![HellBringer GitHub Stats](https://github-readme-stats.vercel.app/api?username=HellBringerReal&show_icons=true&theme=default&hide=stars)
 
 
 ***THIS REPO IS FOR MY PERSONAL USE ONLY/STRINGS ARE MODIFIED AND SOME MORE MODULES HAVE BEEN ADDED***
