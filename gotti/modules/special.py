@@ -16,6 +16,7 @@ from gotti.modules.helper_funcs.chat_status import is_user_ban_protected, bot_ad
 import gotti.modules.sql.users_sql as sql
 from gotti import dispatcher, OWNER_ID, SUDO_USERS, SUPPORT_USERS, LOGGER
 from gotti.modules.helper_funcs.filters import CustomFilters
+from gotti.modules.disable import DisableAbleCommandHandler
 
 USERS_GROUP = 4
 
