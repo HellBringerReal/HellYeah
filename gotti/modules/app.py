@@ -1,10 +1,9 @@
-import datetime
+
 from random import randint
 from gtts import gTTS
 import os
 import re
 import urllib
-from datetime import datetime
 import urllib.request
 from urllib.error import URLError, HTTPError
 from bs4 import BeautifulSoup
