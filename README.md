@@ -1,4 +1,4 @@
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=HellBringerReal&hide=dockerfile)](https://github.com/HellBringerReal)
+********ITS PETER HERE********
 
 ![HellBringer GitHub Stats](https://github-readme-stats.vercel.app/api?username=HellBringerReal&show_icons=true&theme=default&hide=stars)
 
