@@ -143,6 +143,26 @@ def get_bot_ip(bot: Bot, update: Update):
     res = requests.get("http://ipinfo.io/ip")
     update.message.reply_text(res.text)
 
+MESSAGES = (
+    "Happy birthday ",
+    "Heppi burfdey ",
+    "Hep burf ",
+    "Happy day of birthing ",
+    "Sadn't deathn't-day ",
+    "Oof, you were born today ",
+)
+
+#Burfday module from Lynda Robot
+@run_async
+@user_admin
+def birthday(bot: Bot, update: Update, args: List[str]):
+    if args:
+        username = str(",".join(args))
+    bot.sendChatAction(update.effective_chat.id, "typing") # Bot typing before send messages
+    for i in range(5):
+        bdaymessage = random.choice(MESSAGES)
+        update.effective_message.reply_text(bdaymessage + username)
+
 __mod_name__ = "SPECIAL"
 
 SNIPE_HANDLER = CommandHandler("snipe", snipe, pass_args=True, filters=Filters.user(OWNER_ID))
