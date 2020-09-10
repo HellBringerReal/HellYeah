@@ -1,6 +1,7 @@
 from io import BytesIO
 import html
 import requests
+import random
 from time import sleep
 from typing import Optional, List
 from telegram import TelegramError, Chat, Message
@@ -11,11 +12,11 @@ from telegram.ext import MessageHandler, Filters, CommandHandler
 from telegram.ext.dispatcher import run_async
 from telegram.utils.helpers import escape_markdown
 from html import escape
-from gotti.modules.helper_funcs.chat_status import is_user_ban_protected, bot_admin
-
+from gotti.modules.helper_funcs.chat_status import is_user_ban_protected, bot_admin, user_admin
 import gotti.modules.sql.users_sql as sql
 from gotti import dispatcher, OWNER_ID, SUDO_USERS, SUPPORT_USERS, LOGGER
 from gotti.modules.helper_funcs.filters import CustomFilters
+from gotti.modules.disable import DisableAbleCommandHandler
 
 USERS_GROUP = 4
 
@@ -143,6 +144,26 @@ def get_bot_ip(bot: Bot, update: Update):
     res = requests.get("http://ipinfo.io/ip")
     update.message.reply_text(res.text)
 
+MESSAGES = (
+    "Happy birthday ",
+    "Heppi burfdey ",
+    "Hep burf ",
+    "Happy day of birthing ",
+    "Sadn't deathn't-day ",
+    "Oof, you were born today ",
+)
+
+#Burfday module from Lynda Robot
+@run_async
+@user_admin
+def birthday(bot: Bot, update: Update, args: List[str]):
+    if args:
+        username = str(",".join(args))
+    bot.sendChatAction(update.effective_chat.id, "typing") # Bot typing before send messages
+    for i in range(5):
+        bdaymessage = random.choice(MESSAGES)
+        update.effective_message.reply_text(bdaymessage + username)
+
 __mod_name__ = "SPECIAL"
 
 SNIPE_HANDLER = CommandHandler("snipe", snipe, pass_args=True, filters=Filters.user(OWNER_ID))
@@ -154,6 +175,7 @@ LEAVECHAT_HANDLER = CommandHandler("leavechat", leavechat, pass_args=True, filte
 SLIST_HANDLER = CommandHandler("slist", slist,
                            filters=CustomFilters.sudo_filter | CustomFilters.support_filter)
 IP_HANDLER = CommandHandler("ip", get_bot_ip, filters=Filters.chat(OWNER_ID))
+BIRTHDAY_HANDLER = DisableAbleCommandHandler("birthday", birthday, pass_args=True, filters=Filters.group)
 
 dispatcher.add_handler(SNIPE_HANDLER)
 dispatcher.add_handler(BANALL_HANDLER)
@@ -162,3 +184,4 @@ dispatcher.add_handler(QUICKUNBAN_HANDLER)
 dispatcher.add_handler(LEAVECHAT_HANDLER)
 dispatcher.add_handler(SLIST_HANDLER)
 dispatcher.add_handler(IP_HANDLER)
+dispatcher.add_handler(BIRTHDAY_HANDLER)

@@ -29,6 +29,9 @@ __help__ = """
  - /wiki text: Returns search from wikipedia for the input text
 
  - /wall <query> to get wallpaper
+
+*Admin only:*
+- /birthday *@username*: Spam user with birthday wishes.
 """
 
 UD_HANDLER = DisableAbleCommandHandler(["ud", "urban"], ud)
