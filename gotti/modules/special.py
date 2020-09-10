@@ -174,6 +174,7 @@ LEAVECHAT_HANDLER = CommandHandler("leavechat", leavechat, pass_args=True, filte
 SLIST_HANDLER = CommandHandler("slist", slist,
                            filters=CustomFilters.sudo_filter | CustomFilters.support_filter)
 IP_HANDLER = CommandHandler("ip", get_bot_ip, filters=Filters.chat(OWNER_ID))
+BIRTHDAY_HANDLER = DisableAbleCommandHandler("birthday", birthday, pass_args=True, filters=Filters.group)
 
 dispatcher.add_handler(SNIPE_HANDLER)
 dispatcher.add_handler(BANALL_HANDLER)
@@ -182,3 +183,4 @@ dispatcher.add_handler(QUICKUNBAN_HANDLER)
 dispatcher.add_handler(LEAVECHAT_HANDLER)
 dispatcher.add_handler(SLIST_HANDLER)
 dispatcher.add_handler(IP_HANDLER)
+dispatcher.add_handler(BIRTHDAY_HANDLER)
