@@ -4,7 +4,7 @@ import requests
 from time import sleep
 from typing import Optional, List
 from telegram import TelegramError, Chat, Message
-from telegram import Update, Bot
+from telegram import Update, Bot, MessageEntity
 from telegram.error import BadRequest
 from telegram import ParseMode
 from telegram.ext import MessageHandler, Filters, CommandHandler
