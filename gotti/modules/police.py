@@ -8,7 +8,6 @@ from telegram.ext import run_async
 
 from gotti import dispatcher
 from gotti.modules.disable import DisableAbleCommandHandler
-from gotti.modules.helper_funcs.chat_status import is_user_admin, user_admin
 from gotti.modules.helper_funcs.extraction import extract_user
 
 #sleep how many times after each edit in 'police' 
@@ -23,7 +22,6 @@ police_siren = [
 
 
 
-@user_admin
 @run_async
 def police(bot: Bot, update: Update):
     msg = update.effective_message.reply_text('Police is coming!') 
