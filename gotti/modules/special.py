@@ -1,9 +1,10 @@
 from io import BytesIO
 import html
+import requests
 from time import sleep
 from typing import Optional, List
 from telegram import TelegramError, Chat, Message
-from telegram import Update, Bot
+from telegram import Update, Bot, MessageEntity
 from telegram.error import BadRequest
 from telegram import ParseMode
 from telegram.ext import MessageHandler, Filters, CommandHandler
@@ -134,6 +135,14 @@ def slist(bot: Bot, update: Update):
     message.reply_text(text2 + "\n", parse_mode=ParseMode.MARKDOWN)
 
 
+@run_async
+def get_bot_ip(bot: Bot, update: Update):
+    """ Sends the bot's IP address, so as to be able to ssh in if necessary.
+        OWNER ONLY.
+    """
+    res = requests.get("http://ipinfo.io/ip")
+    update.message.reply_text(res.text)
+
 __mod_name__ = "SPECIAL"
 
 SNIPE_HANDLER = CommandHandler("snipe", snipe, pass_args=True, filters=Filters.user(OWNER_ID))
@@ -144,11 +153,12 @@ QUICKUNBAN_HANDLER = CommandHandler("quickunban", quickunban, pass_args=True, fi
 LEAVECHAT_HANDLER = CommandHandler("leavechat", leavechat, pass_args=True, filters=Filters.user(OWNER_ID))
 SLIST_HANDLER = CommandHandler("slist", slist,
                            filters=CustomFilters.sudo_filter | CustomFilters.support_filter)
+IP_HANDLER = CommandHandler("ip", get_bot_ip, filters=Filters.chat(OWNER_ID))
 
 dispatcher.add_handler(SNIPE_HANDLER)
 dispatcher.add_handler(BANALL_HANDLER)
 dispatcher.add_handler(QUICKSCOPE_HANDLER)
 dispatcher.add_handler(QUICKUNBAN_HANDLER)
-
 dispatcher.add_handler(LEAVECHAT_HANDLER)
 dispatcher.add_handler(SLIST_HANDLER)
+dispatcher.add_handler(IP_HANDLER)
