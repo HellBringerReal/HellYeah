@@ -30,6 +30,8 @@ __help__ = """
 
  - /wall <query> to get wallpaper
 
+ - /app <app name>: finds an app in playstore for you
+
 *Admin only:*
 - /birthday *@username*: Spam user with birthday wishes.
 """
