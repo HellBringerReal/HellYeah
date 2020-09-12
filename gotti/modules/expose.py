@@ -9,7 +9,7 @@ from gotti.modules.disable import DisableAbleCommandHandler
 def expose(bot: Bot, update: Update):
     msg = update.effective_message
     reply_text = msg.reply_to_message.reply_text if msg.reply_to_message else msg.reply_text
-    reply_text(fun_strings.EXPOSES)
+    reply_text("✮ Check Pinned Msg for Updates!\n✮ Exposing TG clowns since 2020!\n✮ Only Truth No Fake News\n✮ Subscribe and Share!\n✮ To Expose Someone The Process Is Simple\n✮ Send Your Proofs To: @Chamangota_bot\n✮ Official Channel Trusted By Telegram Bot : @Napunsak")
      
      
 __help__ = """
