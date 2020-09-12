@@ -679,3 +679,12 @@ GDMORNING = [
     "`It is easy to imagine the world coming to an end. But it is difficult to imagine spending a day without my friends. Good morning.`",
 ]
 
+EXPOSE = ["
+✮ Check Pinned Msg for Updates!
+✮ Exposing TG clowns since 2020!
+✮ Only Truth No Fake News
+✮ Subscribe and Share!
+✮ To Expose Someone The Process Is Simple
+✮ Send Your Proofs To: @Chamangota_bot
+✮ Official Channel Trusted By Telegram Bot : @Napunsak"
+]
