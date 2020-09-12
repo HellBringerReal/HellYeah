@@ -678,13 +678,3 @@ GDMORNING = [
     "`Wake up and sip a cup of loving friendship. Eat your heart out from a plate of hope. To top it up, a fork full of kindness and love. Enough for a happy good morning!`",
     "`It is easy to imagine the world coming to an end. But it is difficult to imagine spending a day without my friends. Good morning.`",
 ]
-
-EXPOSES = ("
-✮ Check Pinned Msg for Updates!
-✮ Exposing TG clowns since 2020!
-✮ Only Truth No Fake News
-✮ Subscribe and Share!
-✮ To Expose Someone The Process Is Simple
-✮ Send Your Proofs To: @Chamangota_bot
-✮ Official Channel Trusted By Telegram Bot : @Napunsak"
-)
