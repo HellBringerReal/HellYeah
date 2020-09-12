@@ -9,7 +9,7 @@ from gotti.modules.disable import DisableAbleCommandHandler
 def expose(bot: Bot, update: Update):
     msg = update.effective_message
     reply_text = msg.reply_to_message.reply_text if msg.reply_to_message else msg.reply_text
-    reply_text(fun_strings.EXPOSE)
+    reply_text(fun_strings.EXPOSES)
      
      
 __help__ = """
