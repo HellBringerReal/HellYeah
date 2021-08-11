@@ -11,7 +11,7 @@ GENERATED FROM [THIS REPOSITORY](https://github.com/AnimeKaizoku/SaitamaRobot)
 
 Click On The Below Image To Deploy This Bot..
 
-[![Deploy](https://telegra.ph/file/76a2bd8715f3e19fc972d.jpg)](https://heroku.com/deploy?template=https://github.com/HellBringerReal/HellYeah.git)
+[![Deploy](https://telegra.ph/file/76a2bd8715f3e19fc972d.jpg)](https://heroku.com/deploy?template=https://github.com/HellBringerReal/Telegram-Bot.git)
 
 
 
