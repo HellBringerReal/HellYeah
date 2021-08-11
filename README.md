@@ -1,4 +1,4 @@
-*ITS PETER HERE*
+*ITS HellBringer HERE*
 
 ![HellBringer GitHub Stats](https://github-readme-stats.vercel.app/api?username=HellBringerReal&show_icons=true&theme=default&hide=stars)
 
